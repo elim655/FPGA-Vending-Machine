@@ -1,0 +1,1385 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst40|inst2'
+Slack : -11.293
+TNS   : -55.269
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -10.812
+TNS   : -10.812
+
+Type  : Slow 1200mV 85C Model Setup 'SystemCLK'
+Slack : -2.899
+TNS   : -111.654
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -2.452
+TNS   : -8.426
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -2.390
+TNS   : -7.032
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -2.386
+TNS   : -6.714
+
+Type  : Slow 1200mV 85C Model Setup 'R0'
+Slack : -1.938
+TNS   : -9.516
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst|2'
+Slack : -0.587
+TNS   : -0.587
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst23|2'
+Slack : -0.574
+TNS   : -0.574
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst13|2'
+Slack : -0.560
+TNS   : -0.560
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst18|2'
+Slack : -0.545
+TNS   : -0.545
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst32|2'
+Slack : -0.519
+TNS   : -0.519
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst27|2'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst38|2'
+Slack : -0.503
+TNS   : -0.503
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst28|2'
+Slack : -0.495
+TNS   : -0.495
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst33|2'
+Slack : -0.485
+TNS   : -0.485
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst8|2'
+Slack : -0.428
+TNS   : -0.428
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst12|2'
+Slack : -0.426
+TNS   : -0.426
+
+Type  : Slow 1200mV 85C Model Setup 'counting:inst2|jkff2:inst|2'
+Slack : -0.406
+TNS   : -0.406
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst2|2'
+Slack : -0.404
+TNS   : -0.404
+
+Type  : Slow 1200mV 85C Model Setup 'lab11step3:inst42|inst2'
+Slack : -0.356
+TNS   : -0.356
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst22|2'
+Slack : -0.356
+TNS   : -0.356
+
+Type  : Slow 1200mV 85C Model Setup 'counting:inst2|jkff2:inst1|2'
+Slack : -0.355
+TNS   : -0.355
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst17|2'
+Slack : -0.305
+TNS   : -0.305
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst37|2'
+Slack : -0.190
+TNS   : -0.190
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst7|2'
+Slack : -0.188
+TNS   : -0.188
+
+Type  : Slow 1200mV 85C Model Setup 'counting:inst2|jkff2:inst2|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SystemCLK'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'R0'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst42|inst2'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst40|inst2'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst17|2'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst2|2'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst7|2'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counting:inst2|jkff2:inst2|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst22|2'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst37|2'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst12|2'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst28|2'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst38|2'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst23|2'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counting:inst2|jkff2:inst1|2'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst33|2'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst32|2'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst27|2'
+Slack : 0.552
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst8|2'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counting:inst2|jkff2:inst|2'
+Slack : 0.650
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst13|2'
+Slack : 0.666
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst18|2'
+Slack : 0.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'subtractor:inst54|jkff2:inst|2'
+Slack : 0.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : 1.857
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'counting:inst2|jkff2:inst2|2'
+Slack : -2.231
+TNS   : -2.231
+
+Type  : Slow 1200mV 85C Model Recovery 'counting:inst2|jkff2:inst1|2'
+Slack : -2.140
+TNS   : -2.140
+
+Type  : Slow 1200mV 85C Model Recovery 'counting:inst2|jkff2:inst|2'
+Slack : -1.951
+TNS   : -1.951
+
+Type  : Slow 1200mV 85C Model Recovery 'lab11step3:inst42|inst2'
+Slack : -1.613
+TNS   : -1.613
+
+Type  : Slow 1200mV 85C Model Removal 'lab11step3:inst42|inst2'
+Slack : 2.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'counting:inst2|jkff2:inst|2'
+Slack : 2.432
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'counting:inst2|jkff2:inst1|2'
+Slack : 2.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'counting:inst2|jkff2:inst2|2'
+Slack : 2.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SystemCLK'
+Slack : -3.000
+TNS   : -73.675
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'R0'
+Slack : -3.000
+TNS   : -13.280
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst40|inst2'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counting:inst2|jkff2:inst1|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counting:inst2|jkff2:inst2|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counting:inst2|jkff2:inst|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst42|inst2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst12|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst13|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst14|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst17|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst18|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst19|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst22|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst23|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst24|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst27|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst28|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst29|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst2|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst32|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst33|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst34|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst37|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst38|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst39|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst3|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst7|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst8|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst9|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst40|inst2'
+Slack : -10.242
+TNS   : -50.233
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -9.743
+TNS   : -9.743
+
+Type  : Slow 1200mV 0C Model Setup 'SystemCLK'
+Slack : -2.654
+TNS   : -99.951
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -2.160
+TNS   : -6.706
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -2.106
+TNS   : -5.503
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -2.090
+TNS   : -5.275
+
+Type  : Slow 1200mV 0C Model Setup 'R0'
+Slack : -1.718
+TNS   : -8.082
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst|2'
+Slack : -0.515
+TNS   : -0.515
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst23|2'
+Slack : -0.483
+TNS   : -0.483
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst13|2'
+Slack : -0.477
+TNS   : -0.477
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst18|2'
+Slack : -0.474
+TNS   : -0.474
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst32|2'
+Slack : -0.440
+TNS   : -0.440
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst27|2'
+Slack : -0.439
+TNS   : -0.439
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst38|2'
+Slack : -0.427
+TNS   : -0.427
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst33|2'
+Slack : -0.420
+TNS   : -0.420
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst28|2'
+Slack : -0.419
+TNS   : -0.419
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst8|2'
+Slack : -0.374
+TNS   : -0.374
+
+Type  : Slow 1200mV 0C Model Setup 'counting:inst2|jkff2:inst|2'
+Slack : -0.349
+TNS   : -0.349
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst12|2'
+Slack : -0.346
+TNS   : -0.346
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst2|2'
+Slack : -0.320
+TNS   : -0.320
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst22|2'
+Slack : -0.289
+TNS   : -0.289
+
+Type  : Slow 1200mV 0C Model Setup 'counting:inst2|jkff2:inst1|2'
+Slack : -0.285
+TNS   : -0.285
+
+Type  : Slow 1200mV 0C Model Setup 'lab11step3:inst42|inst2'
+Slack : -0.266
+TNS   : -0.266
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst17|2'
+Slack : -0.241
+TNS   : -0.241
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst37|2'
+Slack : -0.140
+TNS   : -0.140
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst7|2'
+Slack : -0.134
+TNS   : -0.134
+
+Type  : Slow 1200mV 0C Model Setup 'counting:inst2|jkff2:inst2|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'R0'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst42|inst2'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SystemCLK'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst40|inst2'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst17|2'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst2|2'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counting:inst2|jkff2:inst2|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst7|2'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst22|2'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst37|2'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst12|2'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst28|2'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst38|2'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst23|2'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counting:inst2|jkff2:inst1|2'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst27|2'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst32|2'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst33|2'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst8|2'
+Slack : 0.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counting:inst2|jkff2:inst|2'
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst13|2'
+Slack : 0.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst|2'
+Slack : 0.688
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst18|2'
+Slack : 0.695
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : 1.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst2|2'
+Slack : -2.010
+TNS   : -2.010
+
+Type  : Slow 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst1|2'
+Slack : -1.931
+TNS   : -1.931
+
+Type  : Slow 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst|2'
+Slack : -1.770
+TNS   : -1.770
+
+Type  : Slow 1200mV 0C Model Recovery 'lab11step3:inst42|inst2'
+Slack : -1.387
+TNS   : -1.387
+
+Type  : Slow 1200mV 0C Model Removal 'lab11step3:inst42|inst2'
+Slack : 1.969
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'counting:inst2|jkff2:inst|2'
+Slack : 2.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'counting:inst2|jkff2:inst1|2'
+Slack : 2.507
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'counting:inst2|jkff2:inst2|2'
+Slack : 2.589
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SystemCLK'
+Slack : -3.000
+TNS   : -73.675
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'R0'
+Slack : -3.000
+TNS   : -13.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|inst2'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst1|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst2|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|inst2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst12|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst13|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst14|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst17|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst18|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst19|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst22|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst23|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst24|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst27|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst28|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst29|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst2|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst32|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst33|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst34|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst37|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst38|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst39|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst3|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst7|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst8|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst9|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst|2'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst40|inst2'
+Slack : -5.248
+TNS   : -25.646
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -5.095
+TNS   : -5.095
+
+Type  : Fast 1200mV 0C Model Setup 'SystemCLK'
+Slack : -1.522
+TNS   : -53.461
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -0.717
+TNS   : -0.717
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -0.711
+TNS   : -0.814
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -0.666
+TNS   : -0.666
+
+Type  : Fast 1200mV 0C Model Setup 'R0'
+Slack : -0.461
+TNS   : -2.113
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst13|2'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst|2'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst23|2'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst27|2'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst32|2'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst18|2'
+Slack : 0.064
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst38|2'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst12|2'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst28|2'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst33|2'
+Slack : 0.092
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst2|2'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'lab11step3:inst42|inst2'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst8|2'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'counting:inst2|jkff2:inst|2'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst22|2'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'counting:inst2|jkff2:inst1|2'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst17|2'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst37|2'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst7|2'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'counting:inst2|jkff2:inst2|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SystemCLK'
+Slack : -0.288
+TNS   : -0.288
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst2|2'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst17|2'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst28|2'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst7|2'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst37|2'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst40|inst2'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst38|2'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst42|inst2'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst22|2'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst33|2'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'R0'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst23|2'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst32|2'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst12|2'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counting:inst2|jkff2:inst2|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst14|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst19|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst24|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst29|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst34|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst39|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst3|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst9|2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counting:inst2|jkff2:inst1|2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst27|2'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst8|2'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counting:inst2|jkff2:inst|2'
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst13|2'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst18|2'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtractor:inst54|jkff2:inst|2'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : 0.834
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst2|2'
+Slack : -0.830
+TNS   : -0.830
+
+Type  : Fast 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst1|2'
+Slack : -0.782
+TNS   : -0.782
+
+Type  : Fast 1200mV 0C Model Recovery 'counting:inst2|jkff2:inst|2'
+Slack : -0.675
+TNS   : -0.675
+
+Type  : Fast 1200mV 0C Model Recovery 'lab11step3:inst42|inst2'
+Slack : -0.297
+TNS   : -0.297
+
+Type  : Fast 1200mV 0C Model Removal 'lab11step3:inst42|inst2'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'counting:inst2|jkff2:inst|2'
+Slack : 1.385
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'counting:inst2|jkff2:inst1|2'
+Slack : 1.471
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'counting:inst2|jkff2:inst2|2'
+Slack : 1.521
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SystemCLK'
+Slack : -3.000
+TNS   : -61.173
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'R0'
+Slack : -3.000
+TNS   : -12.448
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|inst2'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst1|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst2|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counting:inst2|jkff2:inst|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst40|clock_divider_1024:inst1|inst10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|clock_divider_1024:inst1|inst10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst42|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lab11step3:inst55|clock_divider_1024:inst1|inst10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst12|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst13|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst14|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst17|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst18|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst19|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst22|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst23|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst24|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst27|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst28|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst29|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst2|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst32|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst33|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst34|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst37|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst38|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst39|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst3|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst7|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst8|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst9|2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtractor:inst54|jkff2:inst|2'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

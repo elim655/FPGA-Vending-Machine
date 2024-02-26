@@ -1,0 +1,243 @@
+|moneyearn
+Ea[0] <= register:99.OUT
+Ea[1] <= register:inst23.OUT
+Ea[2] <= register:inst27.OUT
+Ea[3] <= register:58.OUT
+Ea[4] <= register:57.OUT
+IN[0] => register:99.IN
+IN[1] => register:inst23.IN
+IN[2] => register:inst27.IN
+IN[3] => register:58.IN
+IN[4] => register:57.IN
+LOAD => register:57.LOAD
+LOAD => register:58.LOAD
+LOAD => register:inst27.LOAD
+LOAD => register:inst23.LOAD
+LOAD => register:99.LOAD
+CLK => register:57.CLK
+CLK => register:58.CLK
+CLK => register:inst27.CLK
+CLK => register:inst23.CLK
+CLK => register:99.CLK
+Reset => register:57.CLRN
+Reset => register:58.CLRN
+Reset => register:inst27.CLRN
+Reset => register:inst23.CLRN
+Reset => register:99.CLRN
+
+
+|moneyearn|register:57
+OUT <= dataa[0].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DFF2:inst.CLK
+LOAD => BUSMUX:inst1.sel
+IN => BUSMUX:inst1.datab[0]
+PRN => DFF2:inst.PRN
+CLRN => DFF2:inst.CLRN
+
+
+|moneyearn|register:57|DFF2:inst
+Q <= 3.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 3.ACLR
+CLK => 3.CLK
+D => 3.DATAIN
+PRN => 3.PRESET
+QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|moneyearn|register:57|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|moneyearn|register:57|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|moneyearn|register:57|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|moneyearn|register:58
+OUT <= dataa[0].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DFF2:inst.CLK
+LOAD => BUSMUX:inst1.sel
+IN => BUSMUX:inst1.datab[0]
+PRN => DFF2:inst.PRN
+CLRN => DFF2:inst.CLRN
+
+
+|moneyearn|register:58|DFF2:inst
+Q <= 3.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 3.ACLR
+CLK => 3.CLK
+D => 3.DATAIN
+PRN => 3.PRESET
+QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|moneyearn|register:58|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|moneyearn|register:58|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|moneyearn|register:58|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|moneyearn|register:inst27
+OUT <= dataa[0].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DFF2:inst.CLK
+LOAD => BUSMUX:inst1.sel
+IN => BUSMUX:inst1.datab[0]
+PRN => DFF2:inst.PRN
+CLRN => DFF2:inst.CLRN
+
+
+|moneyearn|register:inst27|DFF2:inst
+Q <= 3.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 3.ACLR
+CLK => 3.CLK
+D => 3.DATAIN
+PRN => 3.PRESET
+QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|moneyearn|register:inst27|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|moneyearn|register:inst27|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|moneyearn|register:inst27|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|moneyearn|register:inst23
+OUT <= dataa[0].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DFF2:inst.CLK
+LOAD => BUSMUX:inst1.sel
+IN => BUSMUX:inst1.datab[0]
+PRN => DFF2:inst.PRN
+CLRN => DFF2:inst.CLRN
+
+
+|moneyearn|register:inst23|DFF2:inst
+Q <= 3.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 3.ACLR
+CLK => 3.CLK
+D => 3.DATAIN
+PRN => 3.PRESET
+QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|moneyearn|register:inst23|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|moneyearn|register:inst23|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|moneyearn|register:inst23|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|moneyearn|register:99
+OUT <= dataa[0].DB_MAX_OUTPUT_PORT_TYPE
+CLK => DFF2:inst.CLK
+LOAD => BUSMUX:inst1.sel
+IN => BUSMUX:inst1.datab[0]
+PRN => DFF2:inst.PRN
+CLRN => DFF2:inst.CLRN
+
+
+|moneyearn|register:99|DFF2:inst
+Q <= 3.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 3.ACLR
+CLK => 3.CLK
+D => 3.DATAIN
+PRN => 3.PRESET
+QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|moneyearn|register:99|BUSMUX:inst1
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|moneyearn|register:99|BUSMUX:inst1|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|moneyearn|register:99|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+

@@ -1,0 +1,237 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "1",
+					"strict" : false
+				},
+				{
+					"name" : "4",
+					"strict" : false
+				},
+				{
+					"name" : "5",
+					"strict" : false
+				},
+				{
+					"name" : "6",
+					"strict" : false
+				},
+				{
+					"name" : "8",
+					"strict" : false
+				},
+				{
+					"name" : "9",
+					"strict" : false
+				},
+				{
+					"name" : "10",
+					"strict" : false
+				},
+				{
+					"name" : "11",
+					"strict" : false
+				},
+				{
+					"name" : "12",
+					"strict" : false
+				},
+				{
+					"name" : "13",
+					"strict" : false
+				},
+				{
+					"name" : "14",
+					"strict" : false
+				},
+				{
+					"name" : "15",
+					"strict" : false
+				},
+				{
+					"name" : "18",
+					"strict" : false
+				},
+				{
+					"name" : "19",
+					"strict" : false
+				},
+				{
+					"name" : "20",
+					"strict" : false
+				},
+				{
+					"name" : "22",
+					"strict" : false
+				},
+				{
+					"name" : "23",
+					"strict" : false
+				},
+				{
+					"name" : "24",
+					"strict" : false
+				},
+				{
+					"name" : "25",
+					"strict" : false
+				},
+				{
+					"name" : "26",
+					"strict" : false
+				},
+				{
+					"name" : "27",
+					"strict" : false
+				},
+				{
+					"name" : "28",
+					"strict" : false
+				},
+				{
+					"name" : "29",
+					"strict" : false
+				},
+				{
+					"name" : "32",
+					"strict" : false
+				},
+				{
+					"name" : "33",
+					"strict" : false
+				},
+				{
+					"name" : "34",
+					"strict" : false
+				},
+				{
+					"name" : "36",
+					"strict" : false
+				},
+				{
+					"name" : "37",
+					"strict" : false
+				},
+				{
+					"name" : "38",
+					"strict" : false
+				},
+				{
+					"name" : "39",
+					"strict" : false
+				},
+				{
+					"name" : "40",
+					"strict" : false
+				},
+				{
+					"name" : "41",
+					"strict" : false
+				},
+				{
+					"name" : "42",
+					"strict" : false
+				},
+				{
+					"name" : "43",
+					"strict" : false
+				},
+				{
+					"name" : "45",
+					"strict" : false
+				},
+				{
+					"name" : "46",
+					"strict" : false
+				},
+				{
+					"name" : "47",
+					"strict" : false
+				},
+				{
+					"name" : "48",
+					"strict" : false
+				},
+				{
+					"name" : "49",
+					"strict" : false
+				},
+				{
+					"name" : "50",
+					"strict" : false
+				},
+				{
+					"name" : "51",
+					"strict" : false
+				},
+				{
+					"name" : "52",
+					"strict" : false
+				},
+				{
+					"name" : "53",
+					"strict" : false
+				},
+				{
+					"name" : "54",
+					"strict" : false
+				},
+				{
+					"name" : "55",
+					"strict" : false
+				},
+				{
+					"name" : "56",
+					"strict" : false
+				},
+				{
+					"name" : "Light",
+					"strict" : false
+				},
+				{
+					"name" : "a1",
+					"strict" : false
+				},
+				{
+					"name" : "a0",
+					"strict" : false
+				},
+				{
+					"name" : "R1",
+					"strict" : false
+				},
+				{
+					"name" : "R0",
+					"strict" : false
+				},
+				{
+					"name" : "R2",
+					"strict" : false
+				},
+				{
+					"name" : "W",
+					"strict" : false
+				},
+				{
+					"name" : "SystemCLK",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Count",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

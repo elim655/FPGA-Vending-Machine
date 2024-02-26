@@ -1,0 +1,1730 @@
+Analysis & Synthesis report for Finalproject
+Thu Dec  8 17:19:10 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst2
+ 13. Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst
+ 14. Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst1
+ 15. Parameter Settings for User Entity Instance: itemprice:inst50|register:41|BUSMUX:inst1
+ 16. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst16|BUSMUX:inst1
+ 17. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst15|BUSMUX:inst1
+ 18. Parameter Settings for User Entity Instance: itemprice:inst50|register:99|BUSMUX:inst1
+ 19. Parameter Settings for User Entity Instance: itemprice:inst50|register:42|BUSMUX:inst1
+ 20. Parameter Settings for User Entity Instance: itemprice:inst50|register:67|BUSMUX:inst1
+ 21. Parameter Settings for User Entity Instance: itemprice:inst50|register:72|BUSMUX:inst1
+ 22. Parameter Settings for User Entity Instance: itemprice:inst50|register:i12|BUSMUX:inst1
+ 23. Parameter Settings for User Entity Instance: itemprice:inst50|register:44|BUSMUX:inst1
+ 24. Parameter Settings for User Entity Instance: itemprice:inst50|register:69|BUSMUX:inst1
+ 25. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst25|BUSMUX:inst1
+ 26. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst22|BUSMUX:inst1
+ 27. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst34|BUSMUX:inst1
+ 28. Parameter Settings for User Entity Instance: itemprice:inst50|register:75|BUSMUX:inst1
+ 29. Parameter Settings for User Entity Instance: itemprice:inst50|register:58|BUSMUX:inst1
+ 30. Parameter Settings for User Entity Instance: itemprice:inst50|register:46|BUSMUX:inst1
+ 31. Parameter Settings for User Entity Instance: itemprice:inst50|register:48|BUSMUX:inst1
+ 32. Parameter Settings for User Entity Instance: itemprice:inst50|register:60|BUSMUX:inst1
+ 33. Parameter Settings for User Entity Instance: itemprice:inst50|register:76|BUSMUX:inst1
+ 34. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst47|BUSMUX:inst1
+ 35. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst60|BUSMUX:inst1
+ 36. Parameter Settings for User Entity Instance: itemprice:inst50|register:77|BUSMUX:inst1
+ 37. Parameter Settings for User Entity Instance: itemprice:inst50|register:62|BUSMUX:inst1
+ 38. Parameter Settings for User Entity Instance: itemprice:inst50|register:50|BUSMUX:inst1
+ 39. Parameter Settings for User Entity Instance: itemprice:inst50|register:52|BUSMUX:inst1
+ 40. Parameter Settings for User Entity Instance: itemprice:inst50|register:64|BUSMUX:inst1
+ 41. Parameter Settings for User Entity Instance: itemprice:inst50|register:78|BUSMUX:inst1
+ 42. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst73|BUSMUX:inst1
+ 43. Parameter Settings for User Entity Instance: itemprice:inst50|register:inst86|BUSMUX:inst1
+ 44. Parameter Settings for User Entity Instance: itemprice:inst50|register:79|BUSMUX:inst1
+ 45. Parameter Settings for User Entity Instance: itemprice:inst50|register:66|BUSMUX:inst1
+ 46. Parameter Settings for User Entity Instance: itemprice:inst50|register:54|BUSMUX:inst1
+ 47. Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst2
+ 48. Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst
+ 49. Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst1
+ 50. Parameter Settings for User Entity Instance: itemcount:inst49|register:9|BUSMUX:inst1
+ 51. Parameter Settings for User Entity Instance: itemcount:inst49|register:17|BUSMUX:inst1
+ 52. Parameter Settings for User Entity Instance: itemcount:inst49|register:25|BUSMUX:inst1
+ 53. Parameter Settings for User Entity Instance: itemcount:inst49|register:33|BUSMUX:inst1
+ 54. Parameter Settings for User Entity Instance: itemcount:inst49|register:10|BUSMUX:inst1
+ 55. Parameter Settings for User Entity Instance: itemcount:inst49|register:18|BUSMUX:inst1
+ 56. Parameter Settings for User Entity Instance: itemcount:inst49|register:26|BUSMUX:inst1
+ 57. Parameter Settings for User Entity Instance: itemcount:inst49|register:34|BUSMUX:inst1
+ 58. Parameter Settings for User Entity Instance: itemcount:inst49|register:11|BUSMUX:inst1
+ 59. Parameter Settings for User Entity Instance: itemcount:inst49|register:19|BUSMUX:inst1
+ 60. Parameter Settings for User Entity Instance: itemcount:inst49|register:27|BUSMUX:inst1
+ 61. Parameter Settings for User Entity Instance: itemcount:inst49|register:35|BUSMUX:inst1
+ 62. Parameter Settings for User Entity Instance: itemcount:inst49|register:36|BUSMUX:inst1
+ 63. Parameter Settings for User Entity Instance: itemcount:inst49|register:28|BUSMUX:inst1
+ 64. Parameter Settings for User Entity Instance: itemcount:inst49|register:20|BUSMUX:inst1
+ 65. Parameter Settings for User Entity Instance: itemcount:inst49|register:12|BUSMUX:inst1
+ 66. Parameter Settings for User Entity Instance: itemcount:inst49|register:37|BUSMUX:inst1
+ 67. Parameter Settings for User Entity Instance: itemcount:inst49|register:29|BUSMUX:inst1
+ 68. Parameter Settings for User Entity Instance: itemcount:inst49|register:21|BUSMUX:inst1
+ 69. Parameter Settings for User Entity Instance: itemcount:inst49|register:13|BUSMUX:inst1
+ 70. Parameter Settings for User Entity Instance: itemcount:inst49|register:38|BUSMUX:inst1
+ 71. Parameter Settings for User Entity Instance: itemcount:inst49|register:30|BUSMUX:inst1
+ 72. Parameter Settings for User Entity Instance: itemcount:inst49|register:22|BUSMUX:inst1
+ 73. Parameter Settings for User Entity Instance: itemcount:inst49|register:14|BUSMUX:inst1
+ 74. Parameter Settings for User Entity Instance: itemcount:inst49|register:39|BUSMUX:inst1
+ 75. Parameter Settings for User Entity Instance: itemcount:inst49|register:31|BUSMUX:inst1
+ 76. Parameter Settings for User Entity Instance: itemcount:inst49|register:23|BUSMUX:inst1
+ 77. Parameter Settings for User Entity Instance: itemcount:inst49|register:15|BUSMUX:inst1
+ 78. Parameter Settings for User Entity Instance: itemcount:inst49|register:40|BUSMUX:inst1
+ 79. Parameter Settings for User Entity Instance: itemcount:inst49|register:32|BUSMUX:inst1
+ 80. Parameter Settings for User Entity Instance: itemcount:inst49|register:24|BUSMUX:inst1
+ 81. Parameter Settings for User Entity Instance: itemcount:inst49|register:16|BUSMUX:inst1
+ 82. Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst2
+ 83. Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst
+ 84. Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst1
+ 85. Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst2
+ 86. Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst
+ 87. Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst1
+ 88. Parameter Settings for User Entity Instance: moneyearn:inst1|register:57|BUSMUX:inst1
+ 89. Parameter Settings for User Entity Instance: moneyearn:inst1|register:58|BUSMUX:inst1
+ 90. Parameter Settings for User Entity Instance: moneyearn:inst1|register:inst27|BUSMUX:inst1
+ 91. Parameter Settings for User Entity Instance: moneyearn:inst1|register:inst23|BUSMUX:inst1
+ 92. Parameter Settings for User Entity Instance: moneyearn:inst1|register:99|BUSMUX:inst1
+ 93. Parameter Settings for User Entity Instance: BUSMUX:inst
+ 94. Post-Synthesis Netlist Statistics for Top Partition
+ 95. Elapsed Time Per Partition
+ 96. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec  8 17:19:10 2022           ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Standard Edition ;
+; Revision Name                      ; Finalproject                                    ;
+; Top-level Entity Name              ; Finalproject                                    ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 305                                             ;
+;     Total combinational functions  ; 264                                             ;
+;     Dedicated logic registers      ; 131                                             ;
+; Total registers                    ; 131                                             ;
+; Total pins                         ; 67                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; Finalproject       ; Finalproject       ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; Finalproject.bdf                 ; yes             ; User Block Diagram/Schematic File        ; U:/CPRE281/zFinalProj/Finalproject/Finalproject.bdf                 ;         ;
+; seven_seg_decoder.v              ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/seven_seg_decoder.v              ;         ;
+; binary_coded_decimal_converter.v ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/binary_coded_decimal_converter.v ;         ;
+; mux4_4b.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/mux4_4b.bdf                      ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/lpm_mux.inc       ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/lpm_mux.tdf       ;         ;
+; aglobal211.inc                   ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/aglobal211.inc    ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/muxlut.inc        ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/bypassff.inc      ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/megafunctions/altshift.inc      ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction              ; U:/CPRE281/zFinalProj/Finalproject/db/mux_arc.tdf                   ;         ;
+; fsm.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/fsm.bdf                          ;         ;
+; lab11step3.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/lab11step3.bdf                   ;         ;
+; clock_divider_1024.bdf           ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/clock_divider_1024.bdf           ;         ;
+; itemprice.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/itemprice.bdf                    ;         ;
+; mux8_8b.v                        ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v                        ;         ;
+; register.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/register.bdf                     ;         ;
+; dff2.bdf                         ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/others/maxplus2/dff2.bdf        ;         ;
+; db/mux_7rc.tdf                   ; yes             ; Auto-Generated Megafunction              ; U:/CPRE281/zFinalProj/Finalproject/db/mux_7rc.tdf                   ;         ;
+; decoder3to8.v                    ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/decoder3to8.v                    ;         ;
+; itemcount.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/itemcount.bdf                    ;         ;
+; subtractor.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/subtractor.bdf                   ;         ;
+; jkff2.bdf                        ; yes             ; Megafunction                             ; c:/intelfpga/21.1/quartus/libraries/others/maxplus2/jkff2.bdf       ;         ;
+; lab07.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/lab07.bdf                        ;         ;
+; adder_4bit.v                     ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/adder_4bit.v                     ;         ;
+; fulladder.v                      ; yes             ; Auto-Found Verilog HDL File              ; U:/CPRE281/zFinalProj/Finalproject/fulladder.v                      ;         ;
+; counting.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/counting.bdf                     ;         ;
+; mux4_5b.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/mux4_5b.bdf                      ;         ;
+; db/mux_brc.tdf                   ; yes             ; Auto-Generated Megafunction              ; U:/CPRE281/zFinalProj/Finalproject/db/mux_brc.tdf                   ;         ;
+; moneyearn.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/moneyearn.bdf                    ;         ;
+; adder_5bit.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/adder_5bit.bdf                   ;         ;
+; full_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/CPRE281/zFinalProj/Finalproject/full_adder.bdf                   ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 305         ;
+;                                             ;             ;
+; Total combinational functions               ; 264         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 141         ;
+;     -- 3 input functions                    ; 57          ;
+;     -- <=2 input functions                  ; 66          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 264         ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 131         ;
+;     -- Dedicated logic registers            ; 131         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 67          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 77          ;
+; Total fan-out                               ; 1322        ;
+; Average fan-out                             ; 2.50        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                     ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name                    ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------------------+--------------+
+; |Finalproject                              ; 264 (2)             ; 131 (3)                   ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |Finalproject                                                                   ; Finalproject                   ; work         ;
+;    |FSM:inst100|                           ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|FSM:inst100                                                       ; FSM                            ; work         ;
+;    |Lab07:inst34|                          ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Lab07:inst34                                                      ; Lab07                          ; work         ;
+;       |adder_4bit:inst|                    ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Lab07:inst34|adder_4bit:inst                                      ; adder_4bit                     ; work         ;
+;          |fulladder:b2v_inst2|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Lab07:inst34|adder_4bit:inst|fulladder:b2v_inst2                  ; fulladder                      ; work         ;
+;          |fulladder:b2v_inst|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Lab07:inst34|adder_4bit:inst|fulladder:b2v_inst                   ; fulladder                      ; work         ;
+;    |Mux4_4b:inst3|                         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst3                                                     ; Mux4_4b                        ; work         ;
+;       |busmux:inst|                        ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst3|busmux:inst                                         ; busmux                         ; work         ;
+;          |lpm_mux:$00000|                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst3|busmux:inst|lpm_mux:$00000                          ; lpm_mux                        ; work         ;
+;             |mux_arc:auto_generated|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst3|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated   ; mux_arc                        ; work         ;
+;    |Mux4_4b:inst4|                         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst4                                                     ; Mux4_4b                        ; work         ;
+;       |busmux:inst2|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst4|busmux:inst2                                        ; busmux                         ; work         ;
+;          |lpm_mux:$00000|                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst4|busmux:inst2|lpm_mux:$00000                         ; lpm_mux                        ; work         ;
+;             |mux_arc:auto_generated|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst4|busmux:inst2|lpm_mux:$00000|mux_arc:auto_generated  ; mux_arc                        ; work         ;
+;    |Mux4_4b:inst5|                         ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst5                                                     ; Mux4_4b                        ; work         ;
+;       |busmux:inst|                        ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst5|busmux:inst                                         ; busmux                         ; work         ;
+;          |lpm_mux:$00000|                  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst5|busmux:inst|lpm_mux:$00000                          ; lpm_mux                        ; work         ;
+;             |mux_arc:auto_generated|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_4b:inst5|busmux:inst|lpm_mux:$00000|mux_arc:auto_generated   ; mux_arc                        ; work         ;
+;    |Mux4_5b:inst36|                        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36                                                    ; Mux4_5b                        ; work         ;
+;       |busmux:inst1|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst1                                       ; busmux                         ; work         ;
+;          |lpm_mux:$00000|                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst1|lpm_mux:$00000                        ; lpm_mux                        ; work         ;
+;             |mux_brc:auto_generated|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst1|lpm_mux:$00000|mux_brc:auto_generated ; mux_brc                        ; work         ;
+;       |busmux:inst2|                       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst2                                       ; busmux                         ; work         ;
+;          |lpm_mux:$00000|                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst2|lpm_mux:$00000                        ; lpm_mux                        ; work         ;
+;             |mux_brc:auto_generated|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|Mux4_5b:inst36|busmux:inst2|lpm_mux:$00000|mux_brc:auto_generated ; mux_brc                        ; work         ;
+;    |adder_5bit:inst33|                     ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|adder_5bit:inst33                                                 ; adder_5bit                     ; work         ;
+;       |full_adder:inst6|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|adder_5bit:inst33|full_adder:inst6                                ; full_adder                     ; work         ;
+;       |full_adder:inst7|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|adder_5bit:inst33|full_adder:inst7                                ; full_adder                     ; work         ;
+;       |full_adder:inst8|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|adder_5bit:inst33|full_adder:inst8                                ; full_adder                     ; work         ;
+;       |full_adder:inst9|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|adder_5bit:inst33|full_adder:inst9                                ; full_adder                     ; work         ;
+;    |binary_coded_decimal_converter:inst10| ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|binary_coded_decimal_converter:inst10                             ; binary_coded_decimal_converter ; work         ;
+;    |binary_coded_decimal_converter:inst14| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|binary_coded_decimal_converter:inst14                             ; binary_coded_decimal_converter ; work         ;
+;    |binary_coded_decimal_converter:inst18| ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|binary_coded_decimal_converter:inst18                             ; binary_coded_decimal_converter ; work         ;
+;    |binary_coded_decimal_converter:inst6|  ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|binary_coded_decimal_converter:inst6                              ; binary_coded_decimal_converter ; work         ;
+;    |busmux:inst|                           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|busmux:inst                                                       ; busmux                         ; work         ;
+;       |lpm_mux:$00000|                     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|busmux:inst|lpm_mux:$00000                                        ; lpm_mux                        ; work         ;
+;          |mux_brc:auto_generated|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|busmux:inst|lpm_mux:$00000|mux_brc:auto_generated                 ; mux_brc                        ; work         ;
+;    |counting:inst2|                        ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|counting:inst2                                                    ; counting                       ; work         ;
+;       |jkff2:inst1|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|counting:inst2|jkff2:inst1                                        ; jkff2                          ; work         ;
+;       |jkff2:inst2|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|counting:inst2|jkff2:inst2                                        ; jkff2                          ; work         ;
+;       |jkff2:inst3|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|counting:inst2|jkff2:inst3                                        ; jkff2                          ; work         ;
+;       |jkff2:inst|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|counting:inst2|jkff2:inst                                         ; jkff2                          ; work         ;
+;    |itemcount:inst49|                      ; 19 (0)              ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49                                                  ; itemcount                      ; work         ;
+;       |Mux8_8b:inst|                       ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|Mux8_8b:inst                                     ; Mux8_8b                        ; work         ;
+;       |register:10|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:10                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:10|dff2:inst                            ; dff2                           ; work         ;
+;       |register:11|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:11                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:11|dff2:inst                            ; dff2                           ; work         ;
+;       |register:12|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:12                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:12|dff2:inst                            ; dff2                           ; work         ;
+;       |register:13|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:13                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:13|dff2:inst                            ; dff2                           ; work         ;
+;       |register:14|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:14                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:14|dff2:inst                            ; dff2                           ; work         ;
+;       |register:15|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:15                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:15|dff2:inst                            ; dff2                           ; work         ;
+;       |register:16|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:16                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:16|dff2:inst                            ; dff2                           ; work         ;
+;       |register:17|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:17                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:17|dff2:inst                            ; dff2                           ; work         ;
+;       |register:18|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:18                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:18|dff2:inst                            ; dff2                           ; work         ;
+;       |register:19|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:19                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:19|dff2:inst                            ; dff2                           ; work         ;
+;       |register:20|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:20                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:20|dff2:inst                            ; dff2                           ; work         ;
+;       |register:21|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:21                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:21|dff2:inst                            ; dff2                           ; work         ;
+;       |register:22|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:22                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:22|dff2:inst                            ; dff2                           ; work         ;
+;       |register:23|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:23                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:23|dff2:inst                            ; dff2                           ; work         ;
+;       |register:24|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:24                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:24|dff2:inst                            ; dff2                           ; work         ;
+;       |register:25|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:25                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:25|dff2:inst                            ; dff2                           ; work         ;
+;       |register:26|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:26                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:26|dff2:inst                            ; dff2                           ; work         ;
+;       |register:27|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:27                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:27|dff2:inst                            ; dff2                           ; work         ;
+;       |register:28|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:28                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:28|dff2:inst                            ; dff2                           ; work         ;
+;       |register:29|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:29                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:29|dff2:inst                            ; dff2                           ; work         ;
+;       |register:30|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:30                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:30|dff2:inst                            ; dff2                           ; work         ;
+;       |register:31|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:31                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:31|dff2:inst                            ; dff2                           ; work         ;
+;       |register:32|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:32                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:32|dff2:inst                            ; dff2                           ; work         ;
+;       |register:33|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:33                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:33|dff2:inst                            ; dff2                           ; work         ;
+;       |register:34|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:34                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:34|dff2:inst                            ; dff2                           ; work         ;
+;       |register:35|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:35                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:35|dff2:inst                            ; dff2                           ; work         ;
+;       |register:36|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:36                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:36|dff2:inst                            ; dff2                           ; work         ;
+;       |register:37|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:37                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:37|dff2:inst                            ; dff2                           ; work         ;
+;       |register:38|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:38                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:38|dff2:inst                            ; dff2                           ; work         ;
+;       |register:39|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:39                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:39|dff2:inst                            ; dff2                           ; work         ;
+;       |register:40|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:40                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:40|dff2:inst                            ; dff2                           ; work         ;
+;       |register:9|                         ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:9                                       ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemcount:inst49|register:9|dff2:inst                             ; dff2                           ; work         ;
+;    |itemprice:inst50|                      ; 19 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50                                                  ; itemprice                      ; work         ;
+;       |Decoder3to8:inst113|                ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|Decoder3to8:inst113                              ; Decoder3to8                    ; work         ;
+;       |Mux8_8b:inst1|                      ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|Mux8_8b:inst1                                    ; Mux8_8b                        ; work         ;
+;       |register:42|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:42                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:42|dff2:inst                            ; dff2                           ; work         ;
+;       |register:48|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:48                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:48|dff2:inst                            ; dff2                           ; work         ;
+;       |register:50|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:50                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:50|dff2:inst                            ; dff2                           ; work         ;
+;       |register:52|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:52                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:52|dff2:inst                            ; dff2                           ; work         ;
+;       |register:54|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:54                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:54|dff2:inst                            ; dff2                           ; work         ;
+;       |register:75|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:75                                      ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:75|dff2:inst                            ; dff2                           ; work         ;
+;       |register:inst15|                    ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:inst15                                  ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:inst15|dff2:inst                        ; dff2                           ; work         ;
+;       |register:inst25|                    ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:inst25                                  ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|itemprice:inst50|register:inst25|dff2:inst                        ; dff2                           ; work         ;
+;    |lab11step3:inst40|                     ; 21 (0)              ; 19 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst40                                                 ; lab11step3                     ; work         ;
+;       |clock_divider_1024:inst1|           ; 13 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst40|clock_divider_1024:inst1                        ; clock_divider_1024             ; work         ;
+;       |clock_divider_1024:inst|            ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst40|clock_divider_1024:inst                         ; clock_divider_1024             ; work         ;
+;    |lab11step3:inst42|                     ; 20 (0)              ; 14 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst42                                                 ; lab11step3                     ; work         ;
+;       |clock_divider_1024:inst1|           ; 13 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst42|clock_divider_1024:inst1                        ; clock_divider_1024             ; work         ;
+;       |clock_divider_1024:inst|            ; 7 (7)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst42|clock_divider_1024:inst                         ; clock_divider_1024             ; work         ;
+;    |lab11step3:inst55|                     ; 14 (0)              ; 12 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst55                                                 ; lab11step3                     ; work         ;
+;       |clock_divider_1024:inst1|           ; 13 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst55|clock_divider_1024:inst1                        ; clock_divider_1024             ; work         ;
+;       |clock_divider_1024:inst|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|lab11step3:inst55|clock_divider_1024:inst                         ; clock_divider_1024             ; work         ;
+;    |moneyearn:inst1|                       ; 1 (0)               ; 5 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1                                                   ; moneyearn                      ; work         ;
+;       |register:57|                        ; 1 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:57                                       ; register                       ; work         ;
+;          |dff2:inst|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:57|dff2:inst                             ; dff2                           ; work         ;
+;       |register:58|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:58                                       ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:58|dff2:inst                             ; dff2                           ; work         ;
+;       |register:99|                        ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:99                                       ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:99|dff2:inst                             ; dff2                           ; work         ;
+;       |register:inst23|                    ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:inst23                                   ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:inst23|dff2:inst                         ; dff2                           ; work         ;
+;       |register:inst27|                    ; 0 (0)               ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:inst27                                   ; register                       ; work         ;
+;          |dff2:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|moneyearn:inst1|register:inst27|dff2:inst                         ; dff2                           ; work         ;
+;    |seven_seg_decoder:inst12|              ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|seven_seg_decoder:inst12                                          ; seven_seg_decoder              ; work         ;
+;    |seven_seg_decoder:inst16|              ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|seven_seg_decoder:inst16                                          ; seven_seg_decoder              ; work         ;
+;    |seven_seg_decoder:inst19|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|seven_seg_decoder:inst19                                          ; seven_seg_decoder              ; work         ;
+;    |seven_seg_decoder:inst20|              ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|seven_seg_decoder:inst20                                          ; seven_seg_decoder              ; work         ;
+;    |seven_seg_decoder:inst8|               ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|seven_seg_decoder:inst8                                           ; seven_seg_decoder              ; work         ;
+;    |subtractor:inst54|                     ; 60 (0)              ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54                                                 ; subtractor                     ; work         ;
+;       |Decoder3to8:inst44|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|Decoder3to8:inst44                              ; Decoder3to8                    ; work         ;
+;       |Mux8_8b:inst48|                     ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|Mux8_8b:inst48                                  ; Mux8_8b                        ; work         ;
+;       |jkff2:inst10|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst10                                    ; jkff2                          ; work         ;
+;       |jkff2:inst12|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst12                                    ; jkff2                          ; work         ;
+;       |jkff2:inst13|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst13                                    ; jkff2                          ; work         ;
+;       |jkff2:inst14|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst14                                    ; jkff2                          ; work         ;
+;       |jkff2:inst15|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst15                                    ; jkff2                          ; work         ;
+;       |jkff2:inst17|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst17                                    ; jkff2                          ; work         ;
+;       |jkff2:inst18|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst18                                    ; jkff2                          ; work         ;
+;       |jkff2:inst19|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst19                                    ; jkff2                          ; work         ;
+;       |jkff2:inst20|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst20                                    ; jkff2                          ; work         ;
+;       |jkff2:inst22|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst22                                    ; jkff2                          ; work         ;
+;       |jkff2:inst23|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst23                                    ; jkff2                          ; work         ;
+;       |jkff2:inst24|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst24                                    ; jkff2                          ; work         ;
+;       |jkff2:inst25|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst25                                    ; jkff2                          ; work         ;
+;       |jkff2:inst27|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst27                                    ; jkff2                          ; work         ;
+;       |jkff2:inst28|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst28                                    ; jkff2                          ; work         ;
+;       |jkff2:inst29|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst29                                    ; jkff2                          ; work         ;
+;       |jkff2:inst2|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst2                                     ; jkff2                          ; work         ;
+;       |jkff2:inst30|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst30                                    ; jkff2                          ; work         ;
+;       |jkff2:inst32|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst32                                    ; jkff2                          ; work         ;
+;       |jkff2:inst33|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst33                                    ; jkff2                          ; work         ;
+;       |jkff2:inst34|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst34                                    ; jkff2                          ; work         ;
+;       |jkff2:inst35|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst35                                    ; jkff2                          ; work         ;
+;       |jkff2:inst37|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst37                                    ; jkff2                          ; work         ;
+;       |jkff2:inst38|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst38                                    ; jkff2                          ; work         ;
+;       |jkff2:inst39|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst39                                    ; jkff2                          ; work         ;
+;       |jkff2:inst3|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst3                                     ; jkff2                          ; work         ;
+;       |jkff2:inst40|                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst40                                    ; jkff2                          ; work         ;
+;       |jkff2:inst6|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst6                                     ; jkff2                          ; work         ;
+;       |jkff2:inst7|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst7                                     ; jkff2                          ; work         ;
+;       |jkff2:inst8|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst8                                     ; jkff2                          ; work         ;
+;       |jkff2:inst9|                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst9                                     ; jkff2                          ; work         ;
+;       |jkff2:inst|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Finalproject|subtractor:inst54|jkff2:inst                                      ; jkff2                          ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                            ;
++-------------------------------------------------+-------------------------------------------------------------+
+; Register name                                   ; Reason for Removal                                          ;
++-------------------------------------------------+-------------------------------------------------------------+
+; lab11step3:inst55|clock_divider_1024:inst|inst1 ; Merged with lab11step3:inst42|clock_divider_1024:inst|inst1 ;
+; lab11step3:inst40|clock_divider_1024:inst|inst1 ; Merged with lab11step3:inst42|clock_divider_1024:inst|inst1 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst2 ; Merged with lab11step3:inst42|clock_divider_1024:inst|inst2 ;
+; lab11step3:inst40|clock_divider_1024:inst|inst2 ; Merged with lab11step3:inst42|clock_divider_1024:inst|inst2 ;
+; itemprice:inst50|register:99|dff2:inst|3        ; Merged with itemprice:inst50|register:41|dff2:inst|3        ;
+; itemprice:inst50|register:69|dff2:inst|3        ; Merged with itemprice:inst50|register:44|dff2:inst|3        ;
+; itemprice:inst50|register:inst22|dff2:inst|3    ; Merged with itemprice:inst50|register:44|dff2:inst|3        ;
+; itemprice:inst50|register:58|dff2:inst|3        ; Merged with itemprice:inst50|register:46|dff2:inst|3        ;
+; itemprice:inst50|register:inst34|dff2:inst|3    ; Merged with itemprice:inst50|register:46|dff2:inst|3        ;
+; itemprice:inst50|register:60|dff2:inst|3        ; Merged with itemprice:inst50|register:48|dff2:inst|3        ;
+; itemprice:inst50|register:76|dff2:inst|3        ; Merged with itemprice:inst50|register:48|dff2:inst|3        ;
+; itemprice:inst50|register:inst47|dff2:inst|3    ; Merged with itemprice:inst50|register:48|dff2:inst|3        ;
+; itemprice:inst50|register:62|dff2:inst|3        ; Merged with itemprice:inst50|register:50|dff2:inst|3        ;
+; itemprice:inst50|register:inst73|dff2:inst|3    ; Merged with itemprice:inst50|register:52|dff2:inst|3        ;
+; itemprice:inst50|register:inst16|dff2:inst|3    ; Merged with itemprice:inst50|register:inst15|dff2:inst|3    ;
+; itemprice:inst50|register:72|dff2:inst|3        ; Merged with itemprice:inst50|register:67|dff2:inst|3        ;
+; itemprice:inst50|register:i12|dff2:inst|3       ; Merged with itemprice:inst50|register:67|dff2:inst|3        ;
+; itemprice:inst50|register:inst60|dff2:inst|3    ; Merged with itemprice:inst50|register:77|dff2:inst|3        ;
+; itemprice:inst50|register:78|dff2:inst|3        ; Merged with itemprice:inst50|register:64|dff2:inst|3        ;
+; itemprice:inst50|register:79|dff2:inst|3        ; Merged with itemprice:inst50|register:66|dff2:inst|3        ;
+; itemprice:inst50|register:inst86|dff2:inst|3    ; Merged with itemprice:inst50|register:66|dff2:inst|3        ;
+; lab11step3:inst42|clock_divider_1024:inst|inst3 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst3 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst3 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst3 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst4 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst4 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst4 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst4 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst5 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst5 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst5 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst5 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst6 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst6 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst6 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst6 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst7 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst7 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst7 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst7 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst8 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst8 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst8 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst8 ;
+; lab11step3:inst42|clock_divider_1024:inst|inst9 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst9 ;
+; lab11step3:inst55|clock_divider_1024:inst|inst9 ; Merged with lab11step3:inst40|clock_divider_1024:inst|inst9 ;
+; itemprice:inst50|register:66|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:64|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:77|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:46|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:44|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:67|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; itemprice:inst50|register:41|dff2:inst|3        ; Stuck at GND due to stuck port data_in                      ;
+; Total Number of Removed Registers = 42          ;                                                             ;
++-------------------------------------------------+-------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 131   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 81    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 46    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------+
+; Inverted Register Statistics                       ;
++------------------------------------------+---------+
+; Inverted Register                        ; Fan out ;
++------------------------------------------+---------+
+; itemcount:inst49|register:15|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:14|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:13|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:16|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:11|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:10|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:9|dff2:inst|3  ; 1       ;
+; itemcount:inst49|register:12|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:31|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:30|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:29|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:32|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:27|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:26|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:25|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:28|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:23|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:22|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:21|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:24|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:18|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:19|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:17|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:20|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:39|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:38|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:37|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:40|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:34|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:35|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:33|dff2:inst|3 ; 1       ;
+; itemcount:inst49|register:36|dff2:inst|3 ; 1       ;
+; subtractor:inst54|jkff2:inst35|2         ; 2       ;
+; subtractor:inst54|jkff2:inst30|2         ; 2       ;
+; subtractor:inst54|jkff2:inst25|2         ; 2       ;
+; subtractor:inst54|jkff2:inst40|2         ; 2       ;
+; subtractor:inst54|jkff2:inst10|2         ; 2       ;
+; subtractor:inst54|jkff2:inst15|2         ; 2       ;
+; subtractor:inst54|jkff2:inst6|2          ; 2       ;
+; subtractor:inst54|jkff2:inst20|2         ; 2       ;
+; subtractor:inst54|jkff2:inst33|2         ; 3       ;
+; subtractor:inst54|jkff2:inst28|2         ; 3       ;
+; subtractor:inst54|jkff2:inst23|2         ; 3       ;
+; subtractor:inst54|jkff2:inst38|2         ; 3       ;
+; subtractor:inst54|jkff2:inst8|2          ; 3       ;
+; subtractor:inst54|jkff2:inst13|2         ; 3       ;
+; subtractor:inst54|jkff2:inst|2           ; 3       ;
+; subtractor:inst54|jkff2:inst18|2         ; 3       ;
+; subtractor:inst54|jkff2:inst34|2         ; 3       ;
+; subtractor:inst54|jkff2:inst29|2         ; 3       ;
+; subtractor:inst54|jkff2:inst24|2         ; 3       ;
+; subtractor:inst54|jkff2:inst39|2         ; 3       ;
+; subtractor:inst54|jkff2:inst9|2          ; 3       ;
+; subtractor:inst54|jkff2:inst14|2         ; 3       ;
+; subtractor:inst54|jkff2:inst3|2          ; 3       ;
+; subtractor:inst54|jkff2:inst19|2         ; 3       ;
+; subtractor:inst54|jkff2:inst32|2         ; 3       ;
+; subtractor:inst54|jkff2:inst27|2         ; 3       ;
+; subtractor:inst54|jkff2:inst22|2         ; 3       ;
+; subtractor:inst54|jkff2:inst37|2         ; 3       ;
+; subtractor:inst54|jkff2:inst7|2          ; 3       ;
+; subtractor:inst54|jkff2:inst12|2         ; 3       ;
+; subtractor:inst54|jkff2:inst2|2          ; 3       ;
+; subtractor:inst54|jkff2:inst17|2         ; 3       ;
+; Total number of inverted registers = 64  ;         ;
++------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Finalproject|itemcount:inst49|Mux8_8b:inst|Mux0    ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Finalproject|subtractor:inst54|Mux8_8b:inst48|Mux2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst3|BUSMUX:inst1 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:41|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst16|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst15|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:99|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:42|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:67|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:72|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:i12|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                        ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:44|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:69|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst25|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst22|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst34|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:75|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:58|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:46|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:48|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:60|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:76|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst47|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst60|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:77|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:62|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:50|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:52|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:64|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:78|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst73|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:inst86|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                           ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:79|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:66|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemprice:inst50|register:54|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst4|BUSMUX:inst1 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:9|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:17|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:25|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:33|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:10|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:18|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:26|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:34|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:11|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:19|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:27|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:35|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:36|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:28|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:20|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:12|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:37|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:29|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:21|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:13|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:38|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:30|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:22|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:14|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:39|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:31|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:23|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:15|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:40|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:32|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:24|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: itemcount:inst49|register:16|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                       ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                       ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_4b:inst5|BUSMUX:inst1 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 4     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst2 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Mux4_5b:inst36|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: moneyearn:inst1|register:57|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: moneyearn:inst1|register:58|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: moneyearn:inst1|register:inst27|BUSMUX:inst1 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                          ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: moneyearn:inst1|register:inst23|BUSMUX:inst1 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                          ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: moneyearn:inst1|register:99|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 1     ; Untyped                                                      ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 5     ; Untyped                         ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 67                          ;
+; cycloneiii_ff         ; 131                         ;
+;     CLR               ; 37                          ;
+;     ENA               ; 2                           ;
+;     ENA CLR           ; 44                          ;
+;     plain             ; 48                          ;
+; cycloneiii_lcell_comb ; 270                         ;
+;     normal            ; 270                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 46                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 57                          ;
+;         4 data inputs ; 141                         ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.74                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Standard Edition
+    Info: Processing started: Thu Dec  8 17:18:56 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Finalproject -c Finalproject
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file finalproject.bdf
+    Info (12023): Found entity 1: Finalproject
+Info (12127): Elaborating entity "Finalproject" for the top level hierarchy
+Warning (275080): Converted elements in bus name "OUT" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "OUT[3..0]" to "OUT3..0"
+Warning (275080): Converted elements in bus name "OUT1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "OUT1[3..0]" to "OUT13..0"
+    Warning (275081): Converted element name(s) from "OUT1[3]" to "OUT13"
+    Warning (275081): Converted element name(s) from "OUT1[2]" to "OUT12"
+    Warning (275081): Converted element name(s) from "OUT1[1]" to "OUT11"
+    Warning (275081): Converted element name(s) from "OUT1[0]" to "OUT10"
+Warning (275080): Converted elements in bus name "OUT2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "OUT2[3..0]" to "OUT23..0"
+    Warning (275081): Converted element name(s) from "OUT2[3]" to "OUT23"
+    Warning (275081): Converted element name(s) from "OUT2[2]" to "OUT22"
+    Warning (275081): Converted element name(s) from "OUT2[1]" to "OUT21"
+    Warning (275081): Converted element name(s) from "OUT2[0]" to "OUT20"
+Warning (275080): Converted elements in bus name "OUT3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "OUT3[3..0]" to "OUT33..0"
+    Warning (275081): Converted element name(s) from "OUT3[3]" to "OUT33"
+    Warning (275081): Converted element name(s) from "OUT3[2]" to "OUT32"
+    Warning (275081): Converted element name(s) from "OUT3[1]" to "OUT31"
+    Warning (275081): Converted element name(s) from "OUT3[0]" to "OUT30"
+Warning (12125): Using design file seven_seg_decoder.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: seven_seg_decoder File: U:/CPRE281/zFinalProj/Finalproject/seven_seg_decoder.v Line: 25
+Info (12128): Elaborating entity "seven_seg_decoder" for hierarchy "seven_seg_decoder:inst7"
+Warning (12125): Using design file binary_coded_decimal_converter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: binary_coded_decimal_converter File: U:/CPRE281/zFinalProj/Finalproject/binary_coded_decimal_converter.v Line: 1
+Info (12128): Elaborating entity "binary_coded_decimal_converter" for hierarchy "binary_coded_decimal_converter:inst6"
+Warning (10034): Output port "N2X3" at binary_coded_decimal_converter.v(3) has no driver File: U:/CPRE281/zFinalProj/Finalproject/binary_coded_decimal_converter.v Line: 3
+Warning (10034): Output port "N2X2" at binary_coded_decimal_converter.v(3) has no driver File: U:/CPRE281/zFinalProj/Finalproject/binary_coded_decimal_converter.v Line: 3
+Warning (12125): Using design file mux4_4b.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux4_4b
+Info (12128): Elaborating entity "Mux4_4b" for hierarchy "Mux4_4b:inst3"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "Mux4_4b:inst3|BUSMUX:inst2"
+Info (12130): Elaborated megafunction instantiation "Mux4_4b:inst3|BUSMUX:inst2"
+Info (12133): Instantiated megafunction "Mux4_4b:inst3|BUSMUX:inst2" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "4"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Mux4_4b:inst3|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "Mux4_4b:inst3|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "Mux4_4b:inst3|BUSMUX:inst2" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
+    Info (12023): Found entity 1: mux_arc File: U:/CPRE281/zFinalProj/Finalproject/db/mux_arc.tdf Line: 23
+Info (12128): Elaborating entity "mux_arc" for hierarchy "Mux4_4b:inst3|BUSMUX:inst2|lpm_mux:$00000|mux_arc:auto_generated" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Warning (12125): Using design file fsm.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FSM
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:inst100"
+Warning (12125): Using design file lab11step3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lab11step3
+Info (12128): Elaborating entity "lab11step3" for hierarchy "lab11step3:inst40"
+Warning (12125): Using design file clock_divider_1024.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: clock_divider_1024
+Info (12128): Elaborating entity "clock_divider_1024" for hierarchy "lab11step3:inst40|clock_divider_1024:inst1"
+Warning (12125): Using design file itemprice.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: itemprice
+Info (12128): Elaborating entity "itemprice" for hierarchy "itemprice:inst50"
+Warning (275085): Found inconsistent dimensions for element "W2"
+Warning (275085): Found inconsistent dimensions for element "W1"
+Warning (275085): Found inconsistent dimensions for element "W0"
+Warning (275080): Converted elements in bus name "W0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W0[0]" to "W00"
+    Warning (275081): Converted element name(s) from "W0[3]" to "W03"
+    Warning (275081): Converted element name(s) from "W0[2]" to "W02"
+    Warning (275081): Converted element name(s) from "W0[1]" to "W01"
+    Warning (275081): Converted element name(s) from "W0[3..0]" to "W03..0"
+Warning (275080): Converted elements in bus name "W1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W1[0]" to "W10"
+    Warning (275081): Converted element name(s) from "W1[1]" to "W11"
+    Warning (275081): Converted element name(s) from "W1[2]" to "W12"
+    Warning (275081): Converted element name(s) from "W1[3]" to "W13"
+    Warning (275081): Converted element name(s) from "W1[3..0]" to "W13..0"
+Warning (275080): Converted elements in bus name "W2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W2[3]" to "W23"
+    Warning (275081): Converted element name(s) from "W2[2]" to "W22"
+    Warning (275081): Converted element name(s) from "W2[1]" to "W21"
+    Warning (275081): Converted element name(s) from "W2[0]" to "W20"
+    Warning (275081): Converted element name(s) from "W2[3..0]" to "W23..0"
+Warning (12125): Using design file mux8_8b.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux8_8b File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 1
+Info (12128): Elaborating entity "Mux8_8b" for hierarchy "itemprice:inst50|Mux8_8b:inst1"
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(9): variable "W0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(10): variable "W1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(11): variable "W2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 11
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(12): variable "W3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(13): variable "W4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(14): variable "W5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 14
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(15): variable "W6" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 15
+Warning (10235): Verilog HDL Always Construct warning at mux8_8b.v(16): variable "W7" is read inside the Always Construct but isn't in the Always Construct's Event Control File: U:/CPRE281/zFinalProj/Finalproject/mux8_8b.v Line: 16
+Warning (12125): Using design file register.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: register
+Info (12128): Elaborating entity "register" for hierarchy "itemprice:inst50|register:41"
+Info (12128): Elaborating entity "DFF2" for hierarchy "itemprice:inst50|register:41|DFF2:inst"
+Info (12130): Elaborated megafunction instantiation "itemprice:inst50|register:41|DFF2:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "itemprice:inst50|register:41|BUSMUX:inst1"
+Info (12130): Elaborated megafunction instantiation "itemprice:inst50|register:41|BUSMUX:inst1"
+Info (12133): Instantiated megafunction "itemprice:inst50|register:41|BUSMUX:inst1" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "itemprice:inst50|register:41|BUSMUX:inst1|lpm_mux:$00000" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "itemprice:inst50|register:41|BUSMUX:inst1|lpm_mux:$00000", which is child of megafunction instantiation "itemprice:inst50|register:41|BUSMUX:inst1" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_7rc.tdf
+    Info (12023): Found entity 1: mux_7rc File: U:/CPRE281/zFinalProj/Finalproject/db/mux_7rc.tdf Line: 23
+Info (12128): Elaborating entity "mux_7rc" for hierarchy "itemprice:inst50|register:41|BUSMUX:inst1|lpm_mux:$00000|mux_7rc:auto_generated" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Warning (12125): Using design file decoder3to8.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Decoder3to8 File: U:/CPRE281/zFinalProj/Finalproject/decoder3to8.v Line: 1
+Info (12128): Elaborating entity "Decoder3to8" for hierarchy "itemprice:inst50|Decoder3to8:inst113"
+Warning (12125): Using design file itemcount.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: itemcount
+Info (12128): Elaborating entity "itemcount" for hierarchy "itemcount:inst49"
+Warning (275085): Found inconsistent dimensions for element "W2"
+Warning (275085): Found inconsistent dimensions for element "W1"
+Warning (275085): Found inconsistent dimensions for element "W0"
+Warning (275080): Converted elements in bus name "W0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W0[0]" to "W00"
+    Warning (275081): Converted element name(s) from "W0[1]" to "W01"
+    Warning (275081): Converted element name(s) from "W0[2]" to "W02"
+    Warning (275081): Converted element name(s) from "W0[3]" to "W03"
+    Warning (275081): Converted element name(s) from "W0[3..0]" to "W03..0"
+Warning (275080): Converted elements in bus name "W1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W1[3]" to "W13"
+    Warning (275081): Converted element name(s) from "W1[2]" to "W12"
+    Warning (275081): Converted element name(s) from "W1[1]" to "W11"
+    Warning (275081): Converted element name(s) from "W1[0]" to "W10"
+    Warning (275081): Converted element name(s) from "W1[3..0]" to "W13..0"
+Warning (275080): Converted elements in bus name "W2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "W2[0]" to "W20"
+    Warning (275081): Converted element name(s) from "W2[1]" to "W21"
+    Warning (275081): Converted element name(s) from "W2[2]" to "W22"
+    Warning (275081): Converted element name(s) from "W2[3]" to "W23"
+    Warning (275081): Converted element name(s) from "W2[3..0]" to "W23..0"
+Warning (12125): Using design file subtractor.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: subtractor
+Info (12128): Elaborating entity "subtractor" for hierarchy "subtractor:inst54"
+Info (12128): Elaborating entity "JKFF2" for hierarchy "subtractor:inst54|JKFF2:inst6"
+Info (12130): Elaborated megafunction instantiation "subtractor:inst54|JKFF2:inst6"
+Warning (12125): Using design file lab07.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Lab07
+Info (12128): Elaborating entity "Lab07" for hierarchy "Lab07:inst34"
+Warning (12125): Using design file adder_4bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: adder_4bit File: U:/CPRE281/zFinalProj/Finalproject/adder_4bit.v Line: 20
+Warning (12300): Found the following files while searching for definition of entity "adder_4bit", but did not use these files because already using a different file containing the entity definition
+    Warning (12126): File: adder_4bit.bdf
+Info (12128): Elaborating entity "adder_4bit" for hierarchy "Lab07:inst34|adder_4bit:inst"
+Warning (12125): Using design file fulladder.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fulladder File: U:/CPRE281/zFinalProj/Finalproject/fulladder.v Line: 1
+Info (12128): Elaborating entity "fulladder" for hierarchy "Lab07:inst34|adder_4bit:inst|fulladder:b2v_inst" File: U:/CPRE281/zFinalProj/Finalproject/adder_4bit.v Line: 70
+Warning (12125): Using design file counting.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counting
+Info (12128): Elaborating entity "counting" for hierarchy "counting:inst2"
+Warning (12125): Using design file mux4_5b.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux4_5b
+Info (12128): Elaborating entity "Mux4_5b" for hierarchy "Mux4_5b:inst36"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "Mux4_5b:inst36|BUSMUX:inst2"
+Info (12130): Elaborated megafunction instantiation "Mux4_5b:inst36|BUSMUX:inst2"
+Info (12133): Instantiated megafunction "Mux4_5b:inst36|BUSMUX:inst2" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "Mux4_5b:inst36|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12131): Elaborated megafunction instantiation "Mux4_5b:inst36|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "Mux4_5b:inst36|BUSMUX:inst2" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_brc.tdf
+    Info (12023): Found entity 1: mux_brc File: U:/CPRE281/zFinalProj/Finalproject/db/mux_brc.tdf Line: 23
+Info (12128): Elaborating entity "mux_brc" for hierarchy "Mux4_5b:inst36|BUSMUX:inst2|lpm_mux:$00000|mux_brc:auto_generated" File: c:/intelfpga/21.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Warning (12125): Using design file moneyearn.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: moneyearn
+Info (12128): Elaborating entity "moneyearn" for hierarchy "moneyearn:inst1"
+Warning (12125): Using design file adder_5bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: adder_5bit
+Info (12128): Elaborating entity "adder_5bit" for hierarchy "adder_5bit:inst33"
+Warning (12125): Using design file full_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: full_adder
+Info (12128): Elaborating entity "full_adder" for hierarchy "adder_5bit:inst33|full_adder:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst"
+Info (12133): Instantiated megafunction "BUSMUX:inst" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "2" is stuck at GND
+    Warning (13410): Pin "3" is stuck at GND
+    Warning (13410): Pin "7" is stuck at VCC
+    Warning (13410): Pin "16" is stuck at GND
+    Warning (13410): Pin "17" is stuck at GND
+    Warning (13410): Pin "21" is stuck at VCC
+    Warning (13410): Pin "30" is stuck at GND
+    Warning (13410): Pin "31" is stuck at GND
+    Warning (13410): Pin "35" is stuck at VCC
+    Warning (13410): Pin "44" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 377 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 59 output pins
+    Info (21061): Implemented 310 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 106 warnings
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Thu Dec  8 17:19:11 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
+
+

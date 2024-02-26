@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "43",
+					"strict" : false
+				},
+				{
+					"name" : "45",
+					"strict" : false
+				},
+				{
+					"name" : "46",
+					"strict" : false
+				},
+				{
+					"name" : "47",
+					"strict" : false
+				},
+				{
+					"name" : "48",
+					"strict" : false
+				},
+				{
+					"name" : "49",
+					"strict" : false
+				},
+				{
+					"name" : "50",
+					"strict" : false
+				},
+				{
+					"name" : "51",
+					"strict" : false
+				},
+				{
+					"name" : "52",
+					"strict" : false
+				},
+				{
+					"name" : "53",
+					"strict" : false
+				},
+				{
+					"name" : "54",
+					"strict" : false
+				},
+				{
+					"name" : "55",
+					"strict" : false
+				},
+				{
+					"name" : "56",
+					"strict" : false
+				},
+				{
+					"name" : "Load",
+					"strict" : false
+				},
+				{
+					"name" : "X0",
+					"strict" : false
+				},
+				{
+					"name" : "X1",
+					"strict" : false
+				},
+				{
+					"name" : "X3",
+					"strict" : false
+				},
+				{
+					"name" : "X2",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "toggle",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
